@@ -1,0 +1,30 @@
+.my-text {
+    padding: 50px;    
+}
+
+.row {
+    padding: auto;
+}
+.my-image {
+    padding: 15px;
+}
+.caption{
+    margin: 10px;
+}
+.my-card {
+    align-items: center;
+    
+}
+.my-col {
+    padding-bottom: 15px;
+}
+.my-line {
+    width: 250px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
+.shadow {
+    box-shadow: -30px 30px 20px rgb(7, 7, 7);
+}
