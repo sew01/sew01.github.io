@@ -1,30 +1,185 @@
-.my-text {
-    padding: 50px;    
-}
-
-.row {
-    padding: auto;
-}
-.my-image {
-    padding: 15px;
-}
-.caption{
-    margin: 10px;
-}
-.my-card {
-    align-items: center;
-    
-}
-.my-col {
-    padding-bottom: 15px;
-}
-.my-line {
-    width: 250px;
-    height: 1px;
-    background-color: black;
-    margin-bottom: 3px;
-}
-
-.shadow {
-    box-shadow: -30px 30px 20px rgb(7, 7, 7);
-}
+/* body {
+    background-color: #c2f0f6 !important;
+  } */
+  
+  .grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+  }
+  
+  .card {
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    width: unset !important;
+    /* max-height: 900px;
+    min-height: 900px; */
+  }
+  
+  /* .embed-responsive .card-img-top{
+    object-fit: cover;
+  } */
+  .card-body{
+    max-height: 300px !important;
+    min-height: 300px !important;
+  }
+  .card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+    max-height: 150px;
+    min-height: 150px;
+  }
+  .card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+  }
+  
+  .card__btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.596);
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .card__btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  
+  .card__btn:hover, .card__btn:active {
+    background-color: #dce4ff;
+  }
+  
+  .card__btn:hover span, .card__btn:active span {
+    margin-left: 2rem;
+  }
+  
+  table {
+    table-layout: auto;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  .label {
+    width: 400px;
+    font-size: large;
+    color: #555;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Garamond;
+  }
+  
+  .feild input {
+    width: 500px;
+  }
+  
+  textarea {
+    width: 500px;
+  }
+  
+  .submit_button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(255, 166, 0, 0.623);
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  
+  /* @media screen and (max-width: 425px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 426px)and (max-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px)and (max-width: 1024px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 1rem;
+    }
+  } */
+  
+  @media (min-width: 576px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
