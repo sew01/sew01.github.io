@@ -1,6 +1,6 @@
 .my-text {
     padding: 50px;   
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 
 .row {
@@ -9,11 +9,22 @@
 
 .caption{
     margin: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+.border {
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.my-img {
+    background-color: aliceblue;
+}
+.button {
+    padding-bottom: 10px;
 }
 .parallax{
     background-image: url("../images/WhatsApp Image 2021-06-15 at 17.21.09.jpeg");
-    min-height:460px;
+    min-height:480px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
