@@ -16,6 +16,7 @@
     cursor: pointer;
     transition: 0.2s;
     width: unset !important;
+    height: 34rem !important;
     /* max-height: 900px;
     min-height: 900px; */
   }
@@ -160,9 +161,17 @@
     }
   } */
   
+  @media (max-width: 425px) {
+    .card-text {
+      font-size: 0.8rem;
+    }
+  }
   @media (min-width: 576px) {
     .grid {
       grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .card-text {
+      font-size: 0.8rem;
     }
   }
   
